@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+	printf("Hello!\n\n");
+	printf("I am a Student. \n");
+	printf("%d\n", 1234);
+	return 0;
+}
+/*
+블록 주석 20240404 첫 작성 프로그래밍 cospro2
+*/
