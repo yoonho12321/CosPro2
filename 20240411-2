@@ -1,0 +1,127 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int num;
+	printf("정수 입력:");
+	scanf("%d", &num);
+
+	if (num < 10)
+		printf("%d은(는) 10보다 작다\n", num);
+	if (num > 10)
+		printf("입력값%d은(는) 10보다 크다\n", num);
+	if (num == 10)
+		printf("입력값은 10이다");
+	return 0;
+
+}
+/////////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int opt;
+	double num1, num2;
+	double result;
+
+	printf("두개의 실수 입력하세요:");
+	scanf("%lf %lf", &num1, &num2);
+
+	printf("원하시는 사칙연산을 선택하세요\n");
+	printf("1,덧셈, 2.뺄셈, 3.곱셈, 4.나눗셈 \n");
+	scanf("%d", &opt);
+
+	if (opt == 1)
+		result = num1 + num2;
+	if (opt == 2)
+		result = num1 - num2;
+	if (opt == 3)
+		result = num1 * num2;
+	if (opt == 4)
+		result = num1 / num2;
+
+	printf("결과는 %lf", result);
+
+	return 0;
+
+}
+/////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int num, abs;
+
+	printf("정수 입력 :");
+	scanf_s("%d", &num);
+
+	abs = (num > 0) ? num : num * (-1);
+
+	printf("절대값 : %d \\n\\n", abs);
+
+	return 0;
+}
+////////////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int num;
+	printf("1~5 정수 입력 :");
+	scanf_s(" % d", &num);
+	switch (num)
+	{
+	case 1:
+		printf("1은 one \\n");
+		break;
+	case 2:
+		printf("1은 two \\n");
+		break;
+	case 3:
+		printf("1은 three \\n");
+		break;
+	case 4:
+		printf("4은 four \\n");
+		break;
+	case 5:
+		printf("5은 five \\n");
+		break;
+	default:
+		printf("I do not know!! \\n");
+	}
+
+	return 0;
+
+}
+/////////////////////
+#include<stdio.h>
+
+int main(void)
+{
+	char sel;
+
+	printf("M 오전 , A 오후 , E 저녁 \\n");
+	printf("입력");
+	scanf_s("%c", &sel);
+
+	switch (sel)
+	{
+		case 'M':
+		case 'm':
+			printf("Morning \\n");
+			break;
+		case 'a':
+		case 'A':
+			printf("Afternoon \\n");
+			break;
+		case 'e':
+		case 'E':
+			printf("Evening \\n");
+			break;
+
+		default:
+			printf("잘못 입력하였습니다");
+			break;
+	}
+	return 0;
+}
