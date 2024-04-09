@@ -1,0 +1,129 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int num = 0;
+
+	while (num<=5)
+	{
+		printf("%d \n", num);
+		num++;
+	}
+
+	return 0;
+}
+///////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int dan = 0, num = 1;
+	printf("몇 단?");
+	scanf("%d", &dan);
+
+	while (num < 10)
+	{
+		printf("%d x %d=%d\n", dan, num, dan * num);
+		num++;
+	}
+	return 0;
+
+}
+//////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int dan = 0, num = 1;
+	
+	while (dan <= 10)
+	{
+		num = 0;
+		while (num <= 10)
+		{
+			printf("%d x %d=%d\n", dan, num, dan * num);
+			num++;
+		}
+		dan++;
+		printf("\n\n\n");
+	}
+	return 0;
+
+}
+//////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int num = 0;
+	do
+	{
+		printf("%d\n", num);
+		num++;
+	} while (num < 3);
+
+	return 0;
+}
+/////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int num = 0;
+	for (num = 0; num<3;num++)
+	{
+		printf("Hi For \n");
+	}
+
+	num = 0; 
+	while (num < 3)
+	{
+		printf("Hi while \n");
+		num++;
+	}
+	return 0;
+}
+/////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	int total = 0;
+	int i = 0;
+	int sum = 0;
+	scanf("%d", &sum);
+	printf("0부터 %d 까지의 덧셈은?", sum);
+
+	for (i = 0; i <= sum; i++)
+	{
+		total = total + i;
+	}
+
+	printf("sum = %d\n", total);
+	return 0;
+}
+//////////////////////
+#include <stdio.h>
+
+int main(void)
+{
+	double total = 0.0;
+	double input = 0.0;
+
+	int num = 0;
+
+	for (; input >= 0.0;)
+	{
+		total += input;
+		printf(" 실수를 입력(minus to quit) :");
+		scanf_s("%lf", &input);
+		printf(" + %lf", input);
+		num++;
+	}
+
+	printf("\\n");
+	printf(" total sum = %lf \\n\\n", total);
+
+	printf("평균 : %lf \\n\\n", total / (num - 1));
+	return 0;
+}
